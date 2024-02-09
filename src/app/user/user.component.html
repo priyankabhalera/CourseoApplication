@@ -1,0 +1,24 @@
+<table border="1">
+    <tr>
+        <td>Id</td>
+        <td>Fullname</td>
+        <td>Email</td>
+        <td>Password</td>
+        <td>Phone</td>
+        <td>Address</td>
+        <td>IsDeleted</td>
+        <td>courseList</td>
+        
+        </tr>
+    <tr *ngFor="let item of data">
+        <td>{{ item.id }}</td>
+        <td>{{ item.fullname }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.password }} </td>
+        <td>{{ item.phone }}</td>
+        <td>{{ item.address }}</td>
+        <td>{{item.deleted}}</td>
+        <td>{{item.courseList}}</td>
+     
+        </tr>
+</table>
