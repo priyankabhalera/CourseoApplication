@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CourseServiceService } from '../service/course-service.service';
+import { CourseServiceService } from './course-service.service';
 
 @Component({
   selector: 'app-course',
@@ -20,5 +20,7 @@ export class CourseComponent {
     )
 }
 }
+
+
 
 

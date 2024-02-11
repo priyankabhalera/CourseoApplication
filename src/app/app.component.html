@@ -1,2 +1,32 @@
-<app-home></app-home>
-<router-outlet></router-outlet>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Courseo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/course" routerLinkActive="active">Courses</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/user" routerLinkActive="active">Users</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/signup" routerLinkActive="active">Signup</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
+    
+    

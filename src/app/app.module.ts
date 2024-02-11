@@ -7,9 +7,9 @@ import { UserComponent } from './user/user.component';
 import { CourseComponent } from './course/course.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
-import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CourseServiceService } from './course/course-service.service';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { FormsModule } from '@angular/forms';
     CourseComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+ 
   ],
   imports: [
     BrowserModule,
@@ -28,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    CourseServiceService
   ],
   bootstrap: [AppComponent]
 })
